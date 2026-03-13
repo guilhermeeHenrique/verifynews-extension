@@ -7,26 +7,28 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <header class="hero">
     <nav class="navbar">
       <div class="logo">VerifyPolitics</div>
       <ul class="nav-links">
         <li><a href="#problem">Problème</a></li>
         <li><a href="#solution">Solution</a></li>
-        <li><a href="#how-it-works">Fonctionnement</a></li>
+        <li><a href="#score">Score</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
 
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Vérifiez la fiabilité d’une information politique en quelques secondes.</h1>
+        <p class="eyebrow">Extension de vérification politique</p>
+        <h1>Comprendre avant de croire. Vérifier avant de partager.</h1>
         <p>
-          Une extension de navigateur qui analyse les contenus politiques, affiche un score de fiabilité et vous aide à comprendre avant de croire ou partager.
+          Une extension de navigateur qui analyse les contenus politiques, affiche un score de fiabilité et vous donne accès à des sources et des explications claires.
         </p>
         <div class="hero-buttons">
           <a href="#solution" class="btn primary">Découvrir le prototype</a>
-          <a href="#how-it-works" class="btn secondary">Voir comment ça marche</a>
+          <a href="#demo" class="btn secondary">Voir la démo</a>
         </div>
       </div>
 
@@ -34,46 +36,142 @@
         <div class="mockup-card">
           <span class="score red">Douteux</span>
           <h3>Exemple d’analyse</h3>
-          <p>Sources absentes · formulation trompeuse · affirmation controversée</p>
+          <p class="mockup-line">Absence de source primaire</p>
+          <p class="mockup-line">Formulation émotionnelle détectée</p>
+          <p class="mockup-line">Affirmation non recoupée</p>
+          <button class="mini-btn">Voir les détails</button>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="problem" class="section">
-    <h2>Le problème</h2>
-    <p>
-      Aujourd’hui, vérifier une information politique prend du temps. Entre les réseaux sociaux, les contenus viraux et les opinions déguisées en faits, il devient difficile de savoir rapidement ce qui est fiable.
-    </p>
+  <section id="problem" class="section section-light">
+    <div class="section-header">
+      <p class="eyebrow">Le problème</p>
+      <h2>Vérifier une information politique prend trop de temps.</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Trop d’informations</h3>
+        <p>Le flux politique en ligne est rapide, contradictoire et difficile à filtrer.</p>
+      </div>
+      <div class="card">
+        <h3>Pas assez de repères</h3>
+        <p>Il est difficile de savoir si un contenu repose sur des faits, une opinion ou une manipulation.</p>
+      </div>
+      <div class="card">
+        <h3>Peu de temps</h3>
+        <p>Les utilisateurs n’ont pas envie d’ouvrir dix onglets pour vérifier une seule information.</p>
+      </div>
+    </div>
   </section>
 
   <section id="solution" class="section">
-    <h2>La solution</h2>
-    <p>
-      VerifyPolitics est une extension qui détecte les contenus politiques, affiche un score visuel de fiabilité et permet d’accéder à une analyse détaillée avec des sources et des explications.
+    <div class="section-header">
+      <p class="eyebrow">La solution</p>
+      <h2>Une extension qui s’intègre directement à la navigation.</h2>
+      <p class="section-text">
+        VerifyPolitics détecte les contenus politiques, affiche un score visuel simple et permet d’accéder à une analyse plus détaillée avec des sources consultables.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h3>1. Détecter</h3>
+        <p>Repère les pages ou contenus liés à la politique.</p>
+      </div>
+      <div class="step">
+        <h3>2. Analyser</h3>
+        <p>Identifie les signaux de doute, les formulations trompeuses et les affirmations sensibles.</p>
+      </div>
+      <div class="step">
+        <h3>3. Comparer</h3>
+        <p>Croise l’information avec des sources reconnues et d’autres références fiables.</p>
+      </div>
+      <div class="step">
+        <h3>4. Expliquer</h3>
+        <p>Affiche un score, des indices visuels et donne accès aux détails sur demande.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="score" class="section section-light">
+    <div class="section-header">
+      <p class="eyebrow">Le système de score</p>
+      <h2>Un indicateur simple, avec un niveau de détail si nécessaire.</h2>
+    </div>
+
+    <div class="score-grid">
+      <div class="score-box green">
+        <h3>Fiable</h3>
+        <p>Le contenu semble cohérent avec plusieurs sources reconnues.</p>
+      </div>
+      <div class="score-box orange">
+        <h3>À vérifier</h3>
+        <p>Le contenu manque de contexte ou présente des éléments incertains.</p>
+      </div>
+      <div class="score-box red-box">
+        <h3>Douteux</h3>
+        <p>Le contenu présente de forts signaux de manipulation ou de contradiction.</p>
+      </div>
+    </div>
+
+    <p class="note">
+      Le score ne remplace pas le jugement humain. Il sert à alerter, orienter et faciliter la vérification.
     </p>
   </section>
 
-  <section id="how-it-works" class="section">
-    <h2>Comment ça marche ?</h2>
-    <div class="steps">
-      <div class="step">1. Détecter le contenu politique</div>
-      <div class="step">2. Analyser le texte</div>
-      <div class="step">3. Comparer avec des sources fiables</div>
-      <div class="step">4. Afficher un score et des détails</div>
+  <section id="demo" class="section">
+    <div class="section-header">
+      <p class="eyebrow">Démo</p>
+      <h2>Voir l’outil en action</h2>
+      <p class="section-text">
+        Lorsqu’un contenu paraît douteux, l’utilisateur peut cliquer sur l’extension pour consulter les détails, les sources et les raisons du score affiché.
+      </p>
+    </div>
+
+    <div class="demo-panel">
+      <div class="demo-left">
+        <h3>Page politique consultée</h3>
+        <p>Un article ou un post est lu normalement.</p>
+      </div>
+      <div class="demo-right">
+        <h3>Résultat affiché</h3>
+        <ul>
+          <li>Score visuel immédiat</li>
+          <li>Signalement des éléments douteux</li>
+          <li>Accès aux sources et à l’explication</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section id="faq" class="section">
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <h3>Est-ce que l’outil décide de la vérité ?</h3>
-      <p>Non. Il aide à vérifier plus vite grâce à un score, des signaux d’alerte et des sources consultables.</p>
+  <section id="faq" class="section section-light">
+    <div class="section-header">
+      <p class="eyebrow">FAQ</p>
+      <h2>Questions fréquentes</h2>
     </div>
-    <div class="faq-item">
-      <h3>Pourquoi faire confiance ?</h3>
-      <p>Parce que le résultat est expliqué, les sources sont visibles et l’utilisateur garde son esprit critique.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Est-ce que l’outil dit automatiquement la vérité ?</h3>
+        <p>Non. L’outil aide à vérifier plus vite en montrant des signaux, des sources et un niveau de fiabilité.</p>
+      </div>
+      <div class="faq-item">
+        <h3>L’outil est-il politiquement neutre ?</h3>
+        <p>Il n’évalue pas une opinion politique, mais des critères de fiabilité comme les sources, le contexte et la cohérence.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Pourquoi faire confiance au résultat ?</h3>
+        <p>Parce que les sources sont visibles, les résultats sont expliqués et l’utilisateur conserve son esprit critique.</p>
+      </div>
     </div>
+  </section>
+
+  <section class="section cta-section">
+    <h2>Prêt à découvrir le prototype ?</h2>
+    <p>Testez la démo et participez à la construction d’un outil plus transparent et plus utile.</p>
+    <a href="#" class="btn primary">Tester le prototype</a>
   </section>
 
   <footer class="footer">
